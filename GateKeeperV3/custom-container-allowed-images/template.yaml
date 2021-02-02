@@ -10,6 +10,12 @@ spec:
         listKind: K8sE2ETestContainerAllowedImagesList
         plural: k8se2etestcontainerallowedimages
         singular: k8se2etestcontainerallowedimages
+      match:
+        kinds:
+        - apiGroups:
+          - ""
+          kinds:
+          - Pod
       validation:
         # Schema for the `parameters` field
         openAPIV3Schema:
